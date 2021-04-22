@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Producto.master.cs" Inherits="Producto" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>La Tiendita</title>
+    <link rel="stylesheet" href="<%= ResolveClientUrl("~/assets/css/main.css")%>">
+    <link rel="stylesheet" type="text/css" href="<%= ResolveClientUrl("~/styles/responsive.css")%>">
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+         <div class="container">
+
+        <!-- Header -->
+        <header id="header">
+        <div class="logo">
+            <a href="~/">La Tiendita <span> SuperMarket </span></a>
+
+        </div>
+        <a href="#menu">Menu</a>
+    </header>
+
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+
+        <!-- Footer Content -->
+        <hr  />
+        <footer >
+        
+        <div >
+         <h5> ©2021 - La Tiendita. All rights reserved.- Visitanos en Calle ARCE</h5>  
+        </div>
+    </footer>
+     </div>
+
+        <script src="<%= ResolveClientUrl("~/assets/js/jquery.min.js")%>"></script>
+        <script src="<%= ResolveClientUrl("~/assets/js/jquery.scrollex.min.js")%>"></script>
+        <script src="<%= ResolveClientUrl("~/assets/js/skel.min.js")%>"></script>
+        <script src="<%= ResolveClientUrl("~/assets/js/util.js")%>"></script>
+        <script src="<%= ResolveClientUrl("~/assets/js/main.js")%>"></script>
+
+    </form>
+</body>
+</html>
+

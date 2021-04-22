@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Principal.master.cs" Inherits="Principal" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>La Tiendita</title>
+    <link rel="stylesheet" href="<%= ResolveClientUrl("~/assets/css/main.css")%>">
+    <link rel="stylesheet" type="text/css" href="<%= ResolveClientUrl("~/styles/responsive.css")%>">
+    <link rel="shortcut icon" href="<%= ResolveClientUrl("~//assets/images/tiendita_SuperMarket_Favicon_32x32.jpg?v=1602158249")%>" type="image/png">
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <!-- Header -->
+        <header id="header">
+        <div class="logo">
+            <a href="~/">La Tiendita <span> SuperMarket </span></a>
+
+        </div>
+        <a href="#menu"> 
+            <!-- Nav -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Registrarse</a></li>
+            <li><a href="#">Realizar un Pedido</a></li>
+            <li><a href="#">Vegetales</a></li>
+            <li><a href="#">Frutas</a></li>
+            <li><a href="#">Carnes</a></li>
+            <li><a href="#">Mariscos</a></li>
+            <li><a href="#">Licores</a></li>
+            <li><a href="#">Snacks</a></li>
+            <li><a href="#">Tecnologia</a></li>
+            <li><a href="#">Cerrar Sesion</a></li>
+
+        </ul>
+    </nav>
+        </a>
+           
+    </header>
+
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+        <section id="three" class="wrapper style2">
+        <div class="inner">
+            <header class="align-center">
+                <p class="special">cada pedido es especial para nosotros</p>
+                <h2>por eso los clientes vuelven</h2>
+            </header>
+        </div>
+    </section>
+
+        <!-- Footer Content -->
+        <footer id="footer">
+        <div class="container">
+            <ul class="icons">
+                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            ©2021 - La Tiendita. All rights reserved.- Visitanos en Calle ARCE
+        </div>
+    </footer>
+
+        <script src="<%= ResolveClientUrl("~/assets/js/jquery.min.js")%>"></script>
+        <script src="<%= ResolveClientUrl("~/assets/js/jquery.scrollex.min.js")%>"></script>
+        <script src="<%= ResolveClientUrl("~/assets/js/skel.min.js")%>"></script>
+        <script src="<%= ResolveClientUrl("~/assets/js/util.js")%>"></script>
+        <script src="<%= ResolveClientUrl("~/assets/js/main.js")%>"></script>
+    </form>
+</body>
+</html>
